@@ -1,0 +1,136 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+:root {
+    --cor0: #ffffff;
+    --cor1: #DAD4CD;
+    --cor2: #C0BAB1;
+    --cor3: #8D877E;
+    --cor4: #5B534D;
+    --cor5: #28201B;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cor1);
+    font-family: 'PT Sans', sans-serif;
+}
+
+img#logo {
+    display: block;
+    margin: auto;
+}
+
+header {
+    background-color: var(--cor3);
+    height: 90px;
+    padding-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor5);
+    transition: 0.2s;
+}
+
+nav {
+    height: 45px;
+    background-color: var(--cor2);
+}
+
+nav > ul > li {
+    font-family: 'PT Sans', serif;
+    font-size: 1.2em;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: 0.1s;
+}
+
+@media (max-width: 500px) {
+    nav > ul > li {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+nav > ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav > ul > li:hover {
+    padding-top: 7px;
+    font-size: 1.4em;
+}
+
+a:hover {
+    color: rgb(96, 151, 96);
+}
+
+.linha {
+    background-color: var(--cor4);
+    margin: auto;
+    height: 2px;
+    border-radius: 2px;
+    min-width: 300px;
+    max-width: 1000px;
+}
+
+.atual {
+    font-weight: 600;
+    color: rgb(96, 151, 96);
+}
+ span > a {
+    color: rgb(96, 151, 96);
+ }
+
+ main.sobremain {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto; 
+    display: flex;  
+    flex-direction: column;
+    /* background-color: rgba(255, 0, 179, 0.055); */
+    padding: 20px 10px 20px 10px;
+ }
+
+ #divcharrete {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2px;
+ }
+
+ #charrete {
+    display: block;
+    max-width: 580px;
+    min-width: 200px;
+    border: 5px solid rgb(53, 24, 0);
+ }
+
+ .legenda {
+    text-align: center;
+    font-size: 0.8em;
+    color: var(--cor4);
+ }
+
+ h2{
+    text-align: center;
+    color: var(--cor5);
+    margin-bottom: 10px;
+ }
+
+ .enfase {
+    color: rgb(45, 129, 45);
+ }
+
